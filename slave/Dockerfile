@@ -12,5 +12,5 @@ RUN go build -o slave
 FROM alpine:3.7
 WORKDIR /app
 EXPOSE 8000
-COPY --from=builder /go/src/github.com/muchrm/docker-manager/slave /app
+COPY --from=builder /go/src/github.com/muchrm/docker-manager/slave/slave /app
 CMD ["/app/slave"]

@@ -11,5 +11,5 @@ RUN go build -o master
 
 FROM alpine:3.7
 WORKDIR /app
-COPY --from=builder /go/src/github.com/muchrm/docker-manager/master /app
-CMD ["/app/manager"]
+COPY --from=builder /go/src/github.com/muchrm/docker-manager/master/master /app
+CMD ["/app/master"]
