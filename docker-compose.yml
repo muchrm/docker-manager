@@ -1,4 +1,8 @@
 version: '3.6'
 services:
-  whoami:
-    build: container-test
+  manager:
+    build: ./manager
+  master:
+    build: ./master
+  slave:
+    build: ./slave

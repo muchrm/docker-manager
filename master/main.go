@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	pb "github.com/muchrm/docker-manager/work"
+	pb "github.com/muchrm/docker-manager/master/work"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )
